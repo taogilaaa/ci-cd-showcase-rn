@@ -23,6 +23,11 @@ export default function HomeScreen() {
         <View style={styles.getStartedContainer}>
           <DevelopmentModeNotice />
 
+          <Image
+            source={require('../assets/images/icon-circle.png')}
+            style={styles.welcomeImage}
+          />
+
           <Text style={styles.getStartedText}>Open up the code for this screen:</Text>
 
           <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
