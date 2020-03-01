@@ -10,7 +10,7 @@ cache:
     - node_modules
 script:
   # Workaround for https://github.com/expo/expo-cli/issues/277
-  - echo fs.inotify.max_user_instances=524288 | tee -a /etc/sysctl.conf && sysctl -p
-  - echo fs.inotify.max_user_watches=524288 | tee -a /etc/sysctl.conf && sysctl -p
-  - echo fs.inotify.max_queued_events=524288 | tee -a /etc/sysctl.conf && sysctl -p
+  - echo fs.inotify.max_user_instances=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+  - echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+  - echo fs.inotify.max_queued_events=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then yarn appr; fi'
