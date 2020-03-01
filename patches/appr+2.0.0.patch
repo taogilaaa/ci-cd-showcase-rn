@@ -1,0 +1,14 @@
+diff --git a/node_modules/appr/index.js b/node_modules/appr/index.js
+index 29d2a6d..8954691 100755
+--- a/node_modules/appr/index.js
++++ b/node_modules/appr/index.js
+@@ -6,7 +6,8 @@ const log = require('./scripts/log');
+ const preDeploy = require('./scripts/pre-deploy');
+ const postDeploy = require('./scripts/post-deploy');
+ const getExpChannelName = require('./scripts/utils').getExpChannelName;
+-const localExp = './node_modules/exp/bin/exp.js';
++const localExp = './node_modules/expo/bin/cli.js';
++
+ log('Logging into Expo...');
+ spawn(localExp, ['login', '-u', config.expUsername, '-p', config.expPassword, '--non-interactive'], loginError => {
+   if (loginError) {

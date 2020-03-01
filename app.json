@@ -3,14 +3,16 @@
     "name": "ci-cd-showcase-rn",
     "slug": "ci-cd-showcase-rn",
     "privacy": "public",
-    "sdkVersion": "32.0.0",
+    "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
-      "android"
+      "android",
+      "web"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
